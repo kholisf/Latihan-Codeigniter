@@ -11,6 +11,10 @@ class Komik extends BaseController
     {
         $this->komikModel = new KomikModel();
     }
+    public function detail($slug)
+    {
+        echo $slug;
+    }
     public function index()
     {
         $komik = $this->komikModel->findAll();
